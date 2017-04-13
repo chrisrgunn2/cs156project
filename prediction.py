@@ -18,7 +18,7 @@ def getData(filename, rows):
 		# for row in csvFileReader: 
 		i = 0
 		for row in csvFileReader:
-			if i == rows:
+			if i==rows:
 				break
 			# dates.append(int(row[0].split('-')[0])) # just append the day instead of the entire date
 			dates.append(-i)
