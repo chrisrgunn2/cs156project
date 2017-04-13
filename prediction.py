@@ -37,7 +37,7 @@ def predictPrices(dates, prices, x):
 	SVR is a type of SVM that uses the space between data points as a margin of error and predicts
 	the most likely next point in a data set
 	SVM = Support Vector Machines - which are a type of ML model that can be used for classification and 
-	Regression to predict novel data points in a graph
+	Regression to predict novel data points within a graph
 	'''
 
 	'''
