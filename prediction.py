@@ -11,14 +11,14 @@ prices = []
 
 # gets data data from a csv file
 # TODO: add start and end parameters so that the user can enter a start/end DD/MM/YY to collect data with
-def getData(filename, rows):
+def getData(filename, numRows):
 	with open(filename, 'r') as csvfile:
 		csvFileReader = csv.reader(csvfile) 
 		next(csvFileReader) # skip first row because it's only column names
 		# for row in csvFileReader: 
 		i = 0
 		for row in csvFileReader:
-			if i==rows:
+			if i==numRows:
 				break
 			# dates.append(int(row[0].split('-')[0])) # just append the day instead of the entire date
 			dates.append(-i)
