@@ -15,7 +15,7 @@ def getData(filename, rows):
 	with open(filename, 'r') as csvfile:
 		csvFileReader = csv.reader(csvfile) 
 		next(csvFileReader) # skip first row because it's only column names
-		# for row in csvFileReader:
+		# for row in csvFileReader: 
 		i = 0
 		for row in csvFileReader:
 			if i == rows:
