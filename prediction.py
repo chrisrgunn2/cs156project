@@ -19,7 +19,7 @@ def getData(filename, numRows):
 		i = 0
 		for row in csvFileReader:
 			if i==numRows:
-				break
+				break 
 			# dates.append(int(row[0].split('-')[0])) # just append the day instead of the entire date
 			dates.append(-i)
 			prices.append(float(row[1])) # append the price and convert to float to be more precise
